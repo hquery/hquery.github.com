@@ -1,15 +1,55 @@
 html,body{
-  font-family:Helvetica, Arial, sans-serif;
-  font-size: 18px;
+  font-family:myriad, sans-serif;
+  font-size: 14px;
   padding:0;
-  margin: 0;
+  margin:0 0 0 50px;
   border: 0;
   background: #fff;
 }
 
+#page {
+    width:1000px;
+}
+
+/** Header **/
+
+#docs {
+	height: 400px;
+}
+
+#header ul {
+    text-align:right;
+    margin: 0 0 2px -80px;
+    width: 100%
+}
+
+#header li {
+    display:inline;
+    padding-left: 35px;
+}
+
+#header {
+    border-bottom: solid;
+	border-color: #e6e6e6;
+	border-width: 2px;	
+	margin-bottom: 40px;
+}
+
+#links {
+	text-align: right;
+	  font-size: 120%;
+}
+
+#header a.selected {
+    font-weight: bold;
+    border-bottom: solid;
+	border-color: white;
+	border-width: 5px;
+}
+
+
 a,
-#header a:hover
-{
+#header a:hover {
     color:#56a0ab;
 }
 
@@ -31,19 +71,40 @@ a.noHighlights:hover{
 color: #AAAAAA;
 }
 
-#page {
-    margin:0 0 0 50px;
-    width:920px;
+/**content**/
+
+
+#LeftDiv {
+	float: left;
+	width: 480px;
+}
+
+#top_border { 
+	margin: 20px 0 0 0;
+}
+
+#bottom_border {
+	margin: -20px 0 0 0;
+	width: 100%;
+}
+
+#feedback {
+	margin: 20px 0 0 0;
+}
+
+#RightDiv {
+	float: left;
+	width: 480px;
+	margin: 0 0 0 35px;
+	border: 1px;
+	border-color: black;
 }
 
 #logo {
-    margin: 45px 0 0px 0;
-    width:100%;
+    margin: 0 0 0px 0;
+    width: 20%;
 }
 
-#logo img{
-    margin: 0 35px 35px 0;
-}
 
 img.announce{
   padding-top: 5px;
@@ -54,6 +115,11 @@ img{
     border-style: none
 }
 
+#screenshot {
+	margin: 35px 0 0 35px;
+	padding: 40px;
+}
+
 #SourceForgeLogo{
     width:88px;
     height:31px;
@@ -62,31 +128,27 @@ img{
 .faq_title, .gossary_title, .l32_title, .about_title{
     display: block;
     /*color:#666;
-    font:normal 1.13em arial;*/
-    font-weight: bold;
+    font:normal 1.13em myiad;*/
+    font-weight: regular;
 }
 
 #projectHeader{
-  margin: 0 20px 20px 0;
-  float: left;
-  width: 900px;
-  border: 1px solid #e6e6e6;
-  padding: 10px;
-  background-image: url('../images/grad.png');
 }
 
-#projectHeader h2{
-  margin-top: 0;
+#projectHeader h1{
+	padding: 0 20px 0 35px;
+	font-size: 190%;
+	font-weight: regular
 }
 
 #projectHeader ul{
-  font-size: 150%;
-  font-weight: bold;
-  padding-left: 15px;
+  font-size: 120%;
+  font-weight: regular;
+  padding-left: 50px;
 }
 
 .bumper{
-  font-size: 250%;
+  font-size: 150%;
 }
 
 .l32_title h2 {
@@ -99,54 +161,35 @@ img{
 
 #feedback{
     display:block;
-    vertical-align: bottom;
+    left:-align: bottom;
+    padding: 0 0 20px 0;
 }
 #feedback a{
-    font-weight: bold;
+    font-weight: regular;
 	/*color:#000000;*/
 }
 #feedback a:hover{
     text-decoration: underline;
 }
 
-#screenshot{
-    margin-top: 250px;
+.borders {
+	width: 100%;
 }
+
 .imageHeader{
     text-align: center;
     font-size: 20px;
 }
 .imageDescription{
-    margin-left: 10px;
-    font-size: 14px;
-    margin-top: 0;
+    font-size: 120%;
+    padding-bottom: 20px;
 }
 
 .coming_soon{
   color:gray;
 }
 
-/** Header **/
-#header {
-    margin:0px;
-    display: block;
-    border-bottom: 1px dotted #CCC;
-    width: 100%;
-}
-#header ul {
-    text-align:right;
-    /*padding-right:120px;*/
-    margin:20px 0 5px 0;
-}
 
-#header li {
-    display:inline;
-    padding-left: 20px;
-}
-
-#header a.selected {
-    font-weight: bold;
-}
 
 /** Announcement Subscription**/
 table.announcementSubscription{
@@ -175,19 +218,14 @@ fieldset{
 }
 
 /* * Sidebar * */
-#sidebar {
-  margin: 0 0 25px 30px;
-  width:      350px;
-  float:      left;
-}
-
-#links{
-  margin: 35px 0 0 80px;
+#announcements {
+  margin: 0 0 0 0;
+  width:      0px;
 }
 
 .milestonesList {
     margin: 0px 0 50px 20px;
-	float: right;
+	float: left;
 }
 
 
@@ -244,7 +282,7 @@ div.gossary_title h2 {
 }
 
 #leftColumn .projectDescription h2 {
-	font-weight: bold;
+	font-weight: regular;
 }
 
 #leftColumn p {
@@ -254,6 +292,11 @@ div.gossary_title h2 {
 #middleColumn{
     float:left;
 }
+
+#screenshots {
+	padding: 40px 0 40px 0;
+}
+
 #logoDiv{
     float: left;
     display:block;
@@ -274,24 +317,19 @@ div.gossary_title h2 {
   float: right;
 }
 
-.questionAnswer {
-    border-top:1px dotted #ccc;
-    padding-top:5px;
-    padding-bottom:5px;
+.term {
+    border-top:1px solid #ccc;
+    padding-top:10px;
+    padding-bottom:10px;
+    font-weight: bold;
+
 }
 
-.firstQuestion {
-  border-top:0px
-}
-
-.questionAnswer p{
-  margin-top:0px;
-}
-
-.question {
+.definition {
     font-weight: bold;
     padding-top:10px;
     padding-bottom:5px;
+    margin-bottom: 20px;
 }
 #faqHeader, #l32_docs {
     /*padding-bottom:20px;*/
@@ -309,7 +347,6 @@ div.gossary_title h2 {
 }
 
 .installationStep {
-    border-top:1px dotted #ccc;
     padding-top:5px;
     padding-bottom:5px;
 }
@@ -321,10 +358,10 @@ div.gossary_title h2 {
 /* * Footer * */
 #footer {
     color:#999999;
-    border-top:1px dotted #ccc;
     margin:0 0 30px 0;
     padding:5px 0 20px 0;
     clear:both;
+    width: 1000px;
 }
 
 #footer a {
