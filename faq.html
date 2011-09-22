@@ -2,8 +2,8 @@
 <meta charset=utf-8>
 <html lang=en>
   <head>
-    <link rel="stylesheet" href="stylesheets/main.css" type="text/css" media="screen">
-    <link rel="icon" type="image/png" href="/images/favicon.ico" 
+    <link rel="stylesheet" href="stylesheets/main.css" type="text/css" media="screen"/>
+    <link rel="icon" type="image/png" href="/images/favicon.ico"/>
     <title></title>
     <script type="text/javascript">
     
@@ -20,13 +20,11 @@
     </script>
   </head>
   <body>
-    <div id="page">
-     <div id="header">
+    <header>
       	<div id="logo">
-          		<a href="index.html"><img src="images/hquery_logo_small.png" alt="hQuery Logo" 
-          		</a>
+          		<a href="index.html"><img src="images/hquery_logo_small.png" alt="hQuery Logo"/></a>
         </div>
-        <div id="links">
+    	<nav>
         	<ul>
         	  <li><a href="index.html">Home</a></li>
         	  <li><a href="screen_shots.html">Screen Shots</a></li>
@@ -34,13 +32,13 @@
         	  <li><a href="http://github.com/hquery">Code</a></li>
 <!--    	      <li><a href="download.html">Download</a></li>-->
         	  <li><a href="glossary.html">Glossary</a></li>
-        	  <li><a class="selected" href="faq.html">FAQ</a></li>
+        	  <li><a href="faq.html" class="selected">FAQ</a></li>
         	  <li><a href="mailto:hquery-talk@googlegroups.com">Contact</a></li>
         	</ul> 
-   		 </div>
-	</div>
-	<h1>Frequently Asked Questions</h1>
-        <div class="faq_title">
+   		 </nav>
+	</header>
+        <article class="faq_title">
+        	<h1>Frequently Asked Questions</h1>
           <h2>General Overview</h2>
           <ul id="faqHeader">
             <li><a href="#whatIs">What is hQuery?</a></li>
@@ -68,104 +66,103 @@
             <li><a href="#codequality">Are there coding conventions that I must follow to submit code?</a></li>
             <li><a href="#agpl">Since hQuery requires the MongoDB database, does the AGPL license also apply to hQuery?</a></li>
           </ul>
-        </div>
-        <div class="questionAnswer firstQuestion">
-		<div class="projectDescription"><h2><img src="images/blue_dot.png">What is hQuery?</h2>
-          <p>hQuery is a proof of concept open source middleware software tool that uses a simplified standard information model, based on nationally recognized data elements,  to enable generic queries against and summarized responses from various clinical data sources. hQuery uses pervasive internet-based technologies to deliver flexible easy-to-understand queries and distributed ultra-large scale query execution capabilities.</p>
-          <p>hQuery provides distributed query capabilities that maintain patient information behind the provider (such as individual provider, hospital or HIE) firewall while supporting population reporting. This removes the need for centralized protected health information (PHI) data warehouses that can raise privacy red flags, while offering similar reporting capabilities.</p>
-          <p>hQuery demonstrates how a provider or researcher could query against various data sources to retrieve pertinent response information. hQuery uses a simplified patient information model and internet protocols to access, filter, summarize and retrieve clinical data across various EHR platforms.</p>
-        </div>
-        <div class="questionAnswer">
-		<div class="projectDescription"><h2><img src="images/blue_dot.png">What is the objective of hQuery?</div>
-          <p>As an open source software project, hQuery endeavors to create a community dedicated to addressing the need for web-based capabilities to transform data into normalized data format across various EHR platforms with a query engine and powerful algorithms.<p> 
-          <p>It is our intention that hQuery will demonstrate how open source software can support a community and software that has a positive impact in the healthcare reporting and research.</p>
-        </div>
-        <div class="questionAnswer">
-		<div class="projectDescription"><h2><img src="images/blue_dot.png">Who are the intended users of hQuery?</div>
-          <p>The intended users include providers, researchers and public reporting agencies.</p>
-        <div class="questionAnswer">
-		<div class="projectDescription"><h2><img src="images/blue_dot.png">Does hQuery work with any ONC-certified Electronic Health Record (EHR) System?</div>
+	</article>
+     		<article class="FAQ">
+			<span id="whatIs">
+				<h2><img src="images/blue_dot.png"/>What is hQuery?</h2>
+        	  		<p>hQuery is a proof of concept open source middleware software tool that uses a simplified standard information model, based on nationally recognized data elements,  to enable generic queries against and summarized responses from various clinical data sources. hQuery uses pervasive internet-based technologies to deliver flexible easy-to-understand queries and distributed ultra-large scale query execution capabilities.</p>
+        	  		<p>hQuery provides distributed query capabilities that maintain patient information behind the provider (such as individual provider, hospital or HIE) firewall while supporting population reporting. This removes the need for centralized protected health information (PHI) data warehouses that can raise privacy red flags, while offering similar reporting capabilities.</p>
+			  		<p>hQuery demonstrates how a provider or researcher could query against various data sources to retrieve pertinent response information. hQuery uses a simplified patient information model and internet protocols to access, filter, summarize and retrieve clinical data across various EHR platforms.</p>
+			</span>
+			<span id="objective">
+				<h2><img src="images/blue_dot.png"/>What is the objective of hQuery?</h2>
+          			<p>As an open source software project, hQuery endeavors to create a community dedicated to addressing the need for web-based capabilities to transform data into normalized data format across various EHR platforms with a query engine and powerful algorithms.</p> 
+          			<p>It is our intention that hQuery will demonstrate how open source software can support a community and software that has a positive impact in the healthcare reporting and research.</p>
+			</span>
+		<span id="users">
+			<h2><img src="images/blue_dot.png"/>Who are the intended users of hQuery?</h2>
+          		<p>The intended users include providers, researchers and public reporting agencies.</p>
+          </span>
+		<span id="certification">
+			<h2><img src="images/blue_dot.png"/>Does hQuery work with any ONC-certified Electronic Health Record (EHR) System?</h2>
           <p>hQuery was designed to work across a variety of EHR platforms and database structures including with ONC-certified Electronic Health Record Systems producing Continuity of Care files in either the HITSP C32 or ASTM CCR Health Information Exchange standards. hQuery exposes patient information using a normalized patient information model and offers a powerful map-reduce query engine to support generic querying capabilities.</p>
-        </div>
-        <div class="questionAnswer">
-		<div class="projectDescription"><h2><img src="images/blue_dot.png">What is the hQuery design philosophy?</div>
-          <p>hQuery is designed for ease of deployment, use and integration with a healthcare provider's EHR system. The software has been designed to be permissive and extensible, with the ability to support various data standards for input and output. All hQuery software, and dependent libraries are available under an open source distribution license.</p>
-        </div>
-        <div class="questionAnswer">
-		<div class="projectDescription"><h2><img src="images/blue_dot.png">Do I need to be a healthcare provider or EHR vendor to use hQuery?</div>
+		</span>
+		<span id="philosophy">
+			<h2><img src="images/blue_dot.png"/>What is the hQuery design philosophy?</h2>
+          	<p>hQuery is designed for ease of deployment, use and integration with a healthcare provider's EHR system. The software has been designed to be permissive and extensible, with the ability to support various data standards for input and output. All hQuery software, and dependent libraries are available under an open source distribution license.</p>
+		</span>
+		<span id="vendor">
+			<h2><img src="images/blue_dot.png"/>Do I need to be a healthcare provider or EHR vendor to use hQuery?</h2>
           <p>No. While a healthcare provider will have access to real patient records, and an EHR provider will have a much better understanding of the technical details of the data standards that are used for healthcare information technology systems, we have ensured that others can use hQuery. </p>
-        </div>
-        <div class="questionAnswer">
-		<div class="projectDescription"><h2><img src="images/blue_dot.png">Who is funding the hQuery project?</div>
-          <p>The hQuery project is being funded by the Office of the National Coordinator for Health Information Technology (<a href="http://healthit.hhs.gov/portal/server.pt/community/healthit_hhs_gov__home/">ONC</a>) within the United States Department of Health and Human Services (<a href="http://www.hhs.gov/">HHS</a>).</p>
-        </div>
-        <div class="questionAnswer">
-		<div class="projectDescription"><h2><img src="images/blue_dot.png">What is basic Concept of Operations for use of hQuery by a provider?</div>
+		</span>
+		<span id="funding">
+			<h2><img src="images/blue_dot.png"/>Who is funding the hQuery project?</h2>
+          		<p>The hQuery project is being funded by the Office of the National Coordinator for Health Information Technology (<a href="http://healthit.hhs.gov/portal/server.pt/community/healthit_hhs_gov__home/">ONC</a>) within the United States Department of Health and Human Services (<a href="http://www.hhs.gov/">HHS</a>).</p>
+		</span>
+		<span id="provideruse"><h2><img src="images/blue_dot.png"/>What is basic Concept of Operations for use of hQuery by a provider?</h2>
           <p>hQuery provides distributed query capabilities that maintain patient information behind the provider (such as individual provider, hospital or HIE) firewall while supporting population reporting.</p>
-        </div>
-        <div class="questionAnswer">
-		<div class="projectDescription"><h2><img src="images/blue_dot.png">How can hQuery be used for distributed queries?</div>
+          </span>
+		<span id="report"><h2><img src="images/blue_dot.png"/>How can hQuery be used for distributed queries?</h2>
           <p>hQuery has been designed to be a middleware software capability utilizing simplified standard data models and internet technologies to interoperate across a variety of  EHRs.</p> 
           <p>hQuery exposes patient information using a normalized patient information model and offers a powerful map-reduce query engine to support generic querying capabilities. </p>
           <p>Map-Reduce is a two-step query algorithm. The first step takes an instance of the patient information model as input and produces a custom intermediate data structure. In the second step, a reduce function takes a set of intermediate data structures and produces the final result. This powerful query algorithm is highly concurrent and easily distributed in sharded (partitioned database) environments.</p>
-        </div>
-        <div class="questionAnswer">
-		<div class="projectDescription"><h2><img src="images/blue_dot.png">What standards does hQuery use?</div>
-          <p>The hQuery format utilizes JavaScript and MIME to express Map-Reduce queries.</p>
-          <p>hQuery Data import and transformation tactics include two important steps. First, data may be transformed into a patient information model using one of two techniques, either statically on import or dynamically during the query execution. Secondly, the original data is preserved for provenance and linked to the patient data model instance. Lastly, a RESTful web service for submitting and obtaining results is employed.</p>
-        </div>
-        <div class="questionAnswer">
-		<div class="projectDescription"><h2><img src="images/blue_dot.png">Are there step-by-step instructions for setting up hQuery from source code?</div>
-          <p>Yes. For information technologists who are comfortable with the performing the installation of software components and and modules on servers, there is both step-by-step instructions and explanations on the project's software <a href="https://github.com/hquery/">repository</a>.</p>
-        </div>
-        <div class="questionAnswer">
-		<div class="projectDescription"><h2><img src="images/blue_dot.png">What web browsers can be used with hQuery?</div>
+		</span>
+		<span id="standards">
+			<h2><img src="images/blue_dot.png"/>What standards does hQuery use?</h2>
+      	    	<p>The hQuery format utilizes JavaScript and MIME to express Map-Reduce queries.</p>
+        	  	<p>hQuery Data import and transformation tactics include two important steps. First, data may be transformed into a patient information model using one of two techniques, either statically on import or dynamically during the query execution. Secondly, the original data is preserved for provenance and linked to the patient data model instance. Lastly, a RESTful web service for submitting and obtaining results is employed.</p>
+		</span>
+		<span id="stepbystep">
+			<h2><img src="images/blue_dot.png"/>Are there step-by-step instructions for setting up hQuery from source code?</h2>
+          		<p>Yes. For information technologists who are comfortable with the performing the installation of software components and and modules on servers, there is both step-by-step instructions and explanations on the project's software <a href="https://github.com/hquery/">repository</a>.</p>
+		</span>
+		<span id="browsers">
+			<h2><img src="images/blue_dot.png"/>What web browsers can be used with hQuery?</h2>
           <p>hQuery has been developed and tested for use in FireFox 3.0 and higher, Internet Explorer 8 and higher, as well as Safari 4. Support for other web browsers has not been tested, but the project will endeavor to support as many web browsers as is possible.</p>
-        </div>
-        <div class="questionAnswer">
-		<div class="projectDescription"><h2><img src="images/blue_dot.png">What programming languages does hQuery use?</div>
+		</span>
+		<span id="languages"><h2><img src="images/blue_dot.png"/>What programming languages does hQuery use?</h2>
           <p>hQuery runs on the <a href="http://rubyonrails.org/">Ruby on Rails</a> web framework, the <a href="http://www.mongodb.org/">MongoDB</a> open source document database, and <a href="http://en.wikipedia.org/wiki/JavaScript">JavaScript</a>.  In particular, hQuery requires the use of Ruby 1.9.2, Rails3, and MongoDB v1.8 or higher.  Developing new software with hQuery, and/or adding new customized features, will require non-trivial software development knowledge of the Ruby, JavaScript and HTML programming languages, as well as comfort in working with MongoDB.</p>
-        </div>
-        <div class="questionAnswer">
-		<div class="projectDescription"><h2><img src="images/blue_dot.png">How is communication managed on the open source project?</div>
-          <p>The most prominent activities are always published on the project <a href="index.html">website</a>.  We have attempted to include enough high level information on our project site and our installation instructions available in the source code to setup an instance of hQuery.  Whenever possible, please make use of our <a href="faq.html" class="selected">FAQ</a> and software documentation before exploring other communication channels.</p>
-          <p>There are three email distribution lists which may also be used to request information about the project's plans and activities.  These lists are</p>
+		</span>
+		<span id="communication">
+			<h2><img src="images/blue_dot.png"/>How is communication managed on the open source project?</h2>
+          		<p>The most prominent activities are always published on the project <a href="index.html">website</a>.  We have attempted to include enough high level information on our project site and our installation instructions available in the source code to setup an instance of hQuery.  Whenever possible, please make use of our <a href="faq.html" class="selected">FAQ</a> and software documentation before exploring other communication channels.</p>
+          		<p>There are three email distribution lists which may also be used to request information about the project's plans and activities.  These lists are</p>
           <ul>
             <li><a href="mailto:hquery-announce@googlegroups.com">hquery-announce@googlegroups.com</a> which anyone can <a href="http://groups.google.com/group/hquery-announce/subscribe" target="_external">subscribe</a> to.  Messages to this list are limited to the hQuery governing organizations.</li>
             <li><a href="mailto:hquery-talk@googlegroups.com">hquery-talk@googlegroups.com</a> which like the announcement list, anyone can <a href="http://groups.google.com/group/hquery-talk/subscribe" target="_external">subscribe</a> to.  Additionally, anyone is free to submit questions about the project to this list.  To prevent spam, all messages are first reviewed by the project team before being forwarded to the distribution list.</li>
             <li><a href="mailto:hquery-dev@googlegroups.com">hquery-dev@googlegroups.com</a> is used exclusively for software development questions.  Membership to this list is also <a href="http://groups.google.com/group/hquery-dev/subscribe" target="_external">open to anyone</a>.  <em><b>However, we encourage individuals to limit participation in this list those that are active software engineers</b></em>.  Likewise, anyone is free to submit questions about the project to this list.  Similarly, to prevent spam, all messages are first reviewed by the project team before being forwarded to the distribution list.</li>
           </ul>
-        </div>
-		<div class="projectDescription"><h2><img src="images/blue_dot.png">How is hQuery related to project <a href="http://projectpophealth.org" target="_external">popHealth</a>?</div>
-          <p>hQuery uses a similar architecture to popHealth but is generalized to support ad-hoc queries distributed over a number of patient populations.</p>
-        </div>
-        <div class="questionAnswer">
-		<div class="projectDescription"><h2><img src="images/blue_dot.png">Can I contribute software source code to hQuery?</div>
-          <p>Yes. Code contributions, bug fixes, ideas for new features, are all welcome for the hQuery user interface and to the kernel logic code around our query engine. A requirement for contributing software is that any and all software contributed to hQuery is released under an Apache 2.0 open source distribution license, and that you transfer copyright of any code or patches you submit to the project. Source code contributions, as well as dialog/discussions for feature requests and enhancements will be publicly reviewed and vetted by the hQuery project's governing organizations.</p>
-          <p>To submit a new feature for consideration into the hQuery repository, setup an account on <a href="https://github.com/">GitHub</a>.  Fork the hQuery code, and create a branch of hQuery on your repository.  Send the link to your hQuery branch to the hQuery <a href="mailto:hquery-dev@googlegroups.com">developer email list</a>, and cite either an existing bug or feature from the hQuery project tracker to specify the changes that you are contributing.</p>
-          <p>If you have suggestions on new features, or want to report a bug that has not yet been tracked, send an email to the <a href="mailto:hquery-dev@googlegroups.com">developer email list</a> with either the details to reproduce a bug, or detailed description about a suggested feature that you would like to see added to hQuery.</p>
-        </div>
-        <div class="questionAnswer">
-		<div class="projectDescription"><h2><img src="images/blue_dot.png">Are there coding conventions that I must follow to submit code?</div>
-          <p>Yes.  The hQuery open source community is dedicated to ensuring that the quality of the software source code is always supporting very high standards.  There is a Ruby code convention requirement <a href="https://github.com/eedrummer/styleguide/blob/master/ruby.markdown">here</a>, and the project follows Google's JavaScript style guide <a href="http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml">here</a>.  Further, any additional features added to the hQuery project must include mature unit tests to ensure that the intended feature is performing correctly.</p>
-        </div>
-        <div class="questionAnswer">
-		<div class="projectDescription"><h2><img src="images/blue_dot.png">Since hQuery requires the MongoDB database, does the AGPL license also apply to hQuery?</div>
-          <p>While hQuery uses MongoDB for database infrastructure, hQuery is licensed under the Apache 2.0 distribution license.  There are no requirements for any EHR vendor to open access of their closed source code for any paid commercial system, or free open source system, that integrates with the hQuery software via the Apache 2.0 distribution license.</p>
-           <p>Use of open source infrastructure can cause confusion in situations like this.  10Gen, the company that stewards MongoDB, has provided clarification on the commercial use of systems that use MongoDB for database infrastructure in a commercial project <a href="http://www.mongodb.org/display/DOCS/Licensing">here</a>.  They directly address the situation where a commercial company may want to include MongoDB in a product and ensure that commercial projects are never required to publish their product's source code:</p>
-           <p>"<a href="http://www.mongodb.org/display/DOCS/Licensing"><em>it is never required that applications using mongo be published</em></a>".</p>
-           </p>An issue that could theoretically arise would be if a commercial EHR opted use/subsume hQuery, modify the MongoDB database server for some additional need, and then incorporate a modified version of MongoDB into their commercial project.  At that point, a modified version of the MongoDB source code would need to be made available by an Electronic Health Record vendor.  However, since it is difficult to consider a hypothetical need for that, the hQuery community is confident that commercial EHR vendors will be able to integrate hQuery with your products, and charge whatever fee they deem appropriate when using the hQuery software in a paid commercial project.  The hQuery software will not produce any viral requirement to open other projects.</p>
-        </div>
-      </div>
-      <div id="footer">
-        <div id="footerSourceForge"><a href="http://github.com/" target="_external"><img src="images/github_icon.png" alt="GitHub Logo"></a></div>
+		</span>
+		<span id="pophealth">
+			<h2><img src="images/blue_dot.png"/>How is hQuery related to project <a href="http://projectpophealth.org" target="_external">popHealth?</a></h2>
+          		<p>hQuery uses a similar architecture to popHealth but is generalized to support ad-hoc queries distributed over a number of patient populations.</p>
+		</span>
+		<span id="contribute">
+			<h2><img src="images/blue_dot.png"/>Can I contribute software source code to hQuery?</h2>
+         		 <p>Yes. Code contributions, bug fixes, ideas for new features, are all welcome for the hQuery user interface and to the kernel logic code around our query engine. A requirement for contributing software is that any and all software contributed to hQuery is released under an Apache 2.0 open source distribution license, and that you transfer copyright of any code or patches you submit to the project. Source code contributions, as well as dialog/discussions for feature requests and enhancements will be publicly reviewed and vetted by the hQuery project's governing organizations.</p>
+         		 <p>To submit a new feature for consideration into the hQuery repository, setup an account on <a href="https://github.com/">GitHub</a>.  Fork the hQuery code, and create a branch of hQuery on your repository.  Send the link to your hQuery branch to the hQuery <a href="mailto:hquery-dev@googlegroups.com">developer email list</a>, and cite either an existing bug or feature from the hQuery project tracker to specify the changes that you are contributing.</p>
+          		 <p>If you have suggestions on new features, or want to report a bug that has not yet been tracked, send an email to the <a href="mailto:hquery-dev@googlegroups.com">developer email list</a> with either the details to reproduce a bug, or detailed description about a suggested feature that you would like to see added to hQuery.</p>
+		</span>
+		<span id="codequality">
+			<h2><img src="images/blue_dot.png"/>Are there coding conventions that I must follow to submit code?</h2>
+          		<p>Yes.  The hQuery open source community is dedicated to ensuring that the quality of the software source code is always supporting very high standards.  There is a Ruby code convention requirement <a href="https://github.com/eedrummer/styleguide/blob/master/ruby.markdown">here</a>, and the project follows Google's JavaScript style guide <a href="http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml">here</a>.  Further, any additional features added to the hQuery project must include mature unit tests to ensure that the intended feature is performing correctly.</p>
+      	</span>
+      	<span id="agpl">
+      		<h2><img src="images/blue_dot.png"/>Since hQuery requires the MongoDB database, does the AGPL license also apply to hQuery?</h2>
+          		<p>While hQuery uses MongoDB for database infrastructure, hQuery is licensed under the Apache 2.0 distribution license.  There are no requirements for any EHR vendor to open access of their closed source code for any paid commercial system, or free open source system, that integrates with the hQuery software via the Apache 2.0 distribution license.</p>
+           		<p>Use of open source infrastructure can cause confusion in situations like this.  10Gen, the company that stewards MongoDB, has provided clarification on the commercial use of systems that use MongoDB for database infrastructure in a commercial project <a href="http://www.mongodb.org/display/DOCS/Licensing">here</a>.  They directly address the situation where a commercial company may want to include MongoDB in a product and ensure that commercial projects are never required to publish their product's source code:</p>
+           		<p>"<a href="http://www.mongodb.org/display/DOCS/Licensing"><em>it is never required that applications using mongo be published</em></a>".</p>
+           		<p>An issue that could theoretically arise would be if a commercial EHR opted use/subsume hQuery, modify the MongoDB database server for some additional need, and then incorporate a modified version of MongoDB into their commercial project.  At that point, a modified version of the MongoDB source code would need to be made available by an Electronic Health Record vendor.  However, since it is difficult to consider a hypothetical need for that, the hQuery community is confident that commercial EHR vendors will be able to integrate hQuery with your products, and charge whatever fee they deem appropriate when using the hQuery software in a paid commercial project.  The hQuery software will not produce any viral requirement to open other projects.</p>
+     	</span>
+     </article>
+	<footer>
+        <div id="footerSourceForge"><a href="http://github.com/" target="_external"><img src="images/github_icon.png" alt="GitHub Logo"/></a></div>
         <div id="footerLinks">
           This project was funded by a contract from the <a href="http://www.hhs.gov/healthit/" target="_external">Office of the National Coordinator for Health Information Technology (ONC)</a> &nbsp
           <a href="http://www.hhs.gov/Privacy.html" target="_external">Privacy Policy</a> &nbsp 
           <a href="http://www.hhs.gov/Disclaimer.html" target="_external">Disclaimer</a> &nbsp
-          <br/>Page Last Revised: September 9, 2011
+          <br/>Page Last Revised: September 13, 2011
         </div>
-      </div>
-    </div>
+    </footer>
   </body>
 </html>
