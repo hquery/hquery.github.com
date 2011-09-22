@@ -1,24 +1,153 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, dialog, figure, footer, header, hgroup, nav, section { display: block; }
+body { line-height: 1.5; }
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+}
+
+table, td, th { vertical-align: middle; }
+blockquote:before { content: ""; }
+blockquote:after { content: ""; }
+q:before { content: ""; }
+q:after { content: ""; }
+blockquote, q { quotes: "" ""; }
+a img { border: none; }
+
 html,body{
-  font-family:Helvetica, Arial, sans-serif;
+  font-family:myriad, sans-serif;
   font-size: 14px;
   padding:0;
-  margin: 0;
+  margin:0 0 0 50px;
   border: 0;
   background: #fff;
+  width: 1000px;
+}
+
+
+header {
+    border-bottom: solid;
+	border-color: #e6e6e6;
+	border-width: 2px;	
+	margin-bottom:  60px;
+	margin-top: 10px;
+}
+
+nav {
+	text-align: right;
+	  font-size: 120%;
+}
+
+h1 {
+	color: black;
+	font-size: 180%;
+	margin-bottom: 20px;
+}
+h2 {
+	font-size: 150%;
+	color: black;
+}
+
+h3 {
+	font-size: 120%;
+}
+
+header a {
+	color: #000;
+	text-decoration: none;
+	padding: 5px 15px 0 15px;
+
+}
+
+header a.selected {
+    font-weight: bold;
+    border-bottom: solid;
+	border-color: white;
+	border-width: 10px;
+    border-top: 2px solid #e6e6e6;
+    border-radius: 10px 10px 0 0;
+}
+
+header ul {
+    text-align:right;
+    margin: -20px 0 2px 0;
+    width: 100%
+            width: 20%;
+}
+
+header li {
+    display:inline;
+
+}
+
+article {
+	text-decoration: none;
+	padding-bottom: 20px;
+}
+
+
+article.feature {
+	padding: 0 40px 20px 40px;
+	text-decoration: none;        
+}
+
+article li { 
+	text-decoration: none;
+	margin: 0 0;
+}
+
+
+figure {
+	padding: 20px 0 0 0;
+}
+
+
+dl.table-display { 
+	float: left;
+	width:1000px;
+	margin: 1em 0;
+	padding: 0;
+	border-bottom:1px solid: #e6e6e6;
+}
+
+.table-display dt {
+	clear: left;
+	float: left;
+	width: 280px;
+	margin: 0;
+	padding: 10px;
+	border-top: 1px solid #e6e6e6;
+	font-weight: bold;
+}
+
+.table-display dd {
+	float: left;
+	width: 680px;
+	margin: 0;
+	padding: 10px;
+	border-top: 1px solid #e6e6e6;
 }
 
 a,
-#header a:hover
-{
+header a:hover {
     color:#56a0ab;
 }
 
-#header a,
-a.noHighlights,
-a.noHighlights:hover{
-    color:#000000;
-    text-decoration:none;
-}
 
 /*navigation for the blind, blend this into the background*/
 #header #skipNavigation,
@@ -26,24 +155,49 @@ a.noHighlights:hover{
     color: #FFFFFF;
 }
 
-#header li.dead_link,
-#header li.dead_link:hover{
+header li.dead_link,
+header li.dead_link:hover{
 color: #AAAAAA;
 }
 
-#page {
-    margin:0 0 0 50px;
-    width:920px;
+/**content**/
+
+
+
+#builder {
+	margin: 0px 20px 0 0;
+}
+
+#dashboard {
+	margin: 0 20px 0 0;
+	}
+	
+	
+#LeftDiv {
+	float: left;
+	width: 480px;
+}
+
+#RightDiv {
+	float: left;
+	width: 480px;
+	margin: 0 0 0 35px;
+	border: 1px;
+	border-color: black;
+	height: 80%;
+}
+
+#feedback {
+	margin: 20px 0 0 0;
 }
 
 #logo {
-    margin: 45px 0 0px 0;
-    width:100%;
+    align: left;
+    margin: 0 0 0 0;
+    width: 20%;
 }
 
-#logo img{
-    margin: 0 35px 35px 0;
-}
+
 
 img.announce{
   padding-top: 5px;
@@ -54,99 +208,63 @@ img{
     border-style: none
 }
 
+#screenshot {
+	margin: 35px 0 0 35px;
+	padding: 40px;
+}
+
 #SourceForgeLogo{
     width:88px;
     height:31px;
 }
 
-.faq_title, .gossary_title, .l32_title, .about_title{
-    display: block;
-    /*color:#666;
-    font:normal 1.13em arial;*/
-    font-weight: bold;
-}
 
-#projectHeader{
-  margin: 0 20px 20px 0;
-  float: left;
-  width: 900px;
-  border: 1px solid #e6e6e6;
-  padding: 10px;
-  background-image: url('../images/grad.png');
-}
 
-#projectHeader h2{
-  margin-top: 0;
-}
-
-#projectHeader ul{
-  font-size: 150%;
-  font-weight: bold;
-  padding-left: 15px;
+article ul{
+  font-size: 120%;
+  font-weight: regular;
+  text-decoration: none
 }
 
 .bumper{
-  font-size: 250%;
+  font-size: 150%;
 }
 
-.l32_title h2 {
-  margin-top:0px;
-}
 
-.l32_header{
-  font-size:24px;
-}
 
 #feedback{
+	margin-top: 50px;
     display:block;
-    vertical-align: bottom;
 }
+
+#feedbackLink {
+	margin-top: 20px;
+}
+
 #feedback a{
-    font-weight: bold;
+    font-weight: regular;
 	/*color:#000000;*/
 }
 #feedback a:hover{
     text-decoration: underline;
 }
 
-#screenshot{
-    margin-top: 250px;
-}
+
 .imageHeader{
     text-align: center;
     font-size: 20px;
 }
-.imageDescription{
-    margin-left: 10px;
-    font-size: 14px;
-    margin-top: 0;
-}
+
 
 .coming_soon{
   color:gray;
 }
 
-/** Header **/
-#header {
-    margin:0px;
-    display: block;
-    border-bottom: 1px dotted #CCC;
-    width: 100%;
-}
-#header ul {
-    text-align:right;
-    /*padding-right:120px;*/
-    margin:20px 0 5px 0;
+span {
+	border: 1px solid white;
+	margin-top: 10px;
 }
 
-#header li {
-    display:inline;
-    padding-left: 20px;
-}
-
-#header a.selected {
-    font-weight: bold;
-}
 
 /** Announcement Subscription**/
 table.announcementSubscription{
@@ -174,86 +292,49 @@ fieldset{
   border: none;
 }
 
-/* * Sidebar * */
-#sidebar {
-  margin: 0 0 25px 30px;
-  width:      350px;
-  float:      left;
-}
-
-#links{
-  margin: 35px 0 0 80px;
-}
-
-.milestonesList {
-    margin: 0px 0 50px 20px;
+#announcements {
 	float: right;
+  margin: 0 0 0 0;
+  width:      0px;
 }
 
 
-.milestonesList h2 {
-  margin-bottom: 25px;
-}
 
 #sidebar tr:hover {
     background:#f9f9f9;
 }
 
-/*.milestonesList td,*/
-.milestoneDate{
-    text-align:right;
-    width: 75px;
+
+.milestoneDate {
+    width: 80px;
     color:#666;
-    padding: 5px 5px 5px 0;
 }
 
-/*.milestonesList td+td,*/
-.milestoneSubject{
-    width:180px;
-    color:#000000;
+.milestoneSubject {
+	    padding: 0 0 0 20px;
 }
+
 
 .milestonesList td{
-    border-bottom: 1px  dotted #666;
+    border-bottom: 1px  solid #666;
 }
 th{
     text-align:left;
 }
-#sidebar thead th{
-    border-bottom: 2px solid #ccc;
-    margin-bottom: 10px;
-}
+
 
 /* * Content * */
-#leftColumn{
-    float:left;
-    width:540px;
+
+
+.projectDescription {
+	padding: 20px 0;
 }
 
-#leftColumn div.projectDescription,
 div.projectDescription {
   padding-bottom: 20px;
 }
 
-#leftColumn div.projectDescription h2,
-div.projectDescription h2,
-div.gossary_title h2 {
-  margin-top:20px;
-  padding-bottom:0px;
-  margin-bottom:0px;
-}
 
-#leftColumn .projectDescription h2 {
-	font-weight: bold;
-}
-
-#leftColumn p {
-  margin-top:5px;
-}
-
-#middleColumn{
-    float:left;
-}
 #logoDiv{
     float: left;
     display:block;
@@ -274,24 +355,19 @@ div.gossary_title h2 {
   float: right;
 }
 
-.questionAnswer {
-    border-top:1px dotted #ccc;
-    padding-top:5px;
-    padding-bottom:5px;
+.term {
+    border-top:1px solid #ccc;
+    padding-top:10px;
+    padding-bottom:10px;
+    font-weight: bold;
+
 }
 
-.firstQuestion {
-  border-top:0px
-}
-
-.questionAnswer p{
-  margin-top:0px;
-}
-
-.question {
+.definition {
     font-weight: bold;
     padding-top:10px;
     padding-bottom:5px;
+    margin-bottom: 20px;
 }
 #faqHeader, #l32_docs {
     /*padding-bottom:20px;*/
@@ -309,7 +385,6 @@ div.gossary_title h2 {
 }
 
 .installationStep {
-    border-top:1px dotted #ccc;
     padding-top:5px;
     padding-bottom:5px;
 }
@@ -318,20 +393,23 @@ div.gossary_title h2 {
   border-top:0px
 }
 
-/* * Footer * */
-#footer {
+footer {
     color:#999999;
-    border-top:1px dotted #ccc;
-    margin:0 0 30px 0;
-    padding:5px 0 20px 0;
+    margin-top: 100px;
+    padding:20px 0px 20px 0;
     clear:both;
+    width: 1000px;
 }
 
-#footer a {
+.indexfooter {
+	margin-top: 150px;
+}
+
+footer a {
     color:#000;
 }
 
-#footer a:hover {
+footer a:hover {
     color:#56a0ab;
 }
 

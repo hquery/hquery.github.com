@@ -1,11 +1,10 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html lang="en">
+<!doctype html>
+<meta charset=utf-8>
+<html lang=en>
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta http-equiv="pragma" content="no-cache">
-    <link rel="stylesheet" href="stylesheets/main.css" type="text/css" media="screen">
-    <link rel="icon" type="image/png" href="/images/favicon.ico" />
-    <title>hQuery - An Open-Source Distributed Query Framework for Health Data</title>
+    <link rel="stylesheet" href="stylesheets/main.css" type="text/css" media="screen"/>
+    <link rel="icon" type="image/png" href="/images/favicon.ico"/>
+    <title></title>
     <script type="text/javascript">
     
       var _gaq = _gaq || [];
@@ -20,34 +19,70 @@
     
     </script>
   </head>
-  <body>
-    <div id="page">
-      <div id="header">
-        <ul>
-          <li><a href="index.html" class="selected">Home</a></li>
-          <li><a href="screen_shots.html">Screen Shots</a></li>
-          <li><a href="documents.html">Documents</a></li>
-          <li><a href="http://github.com/hquery" target="_external">Code</a></li>
-<!--          <li><a href="download.html">Download</a></li>-->
-          <li><a href="glossary.html">Glossary</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="mailto:hquery-talk@googlegroups.com">Contact</a></li>
-        </ul>
-      </div>
-      <div id="leftColumn">
-        <div id="logo">
-          <a href="index.html"><img src="images/hquery_logo_small.png" alt="hQuery Logo" /></a>
+	<body>
+    	<header>
+      	<div id="logo">
+          		<a href="index.html"><img src="images/hquery_logo_small.png" alt="hQuery Logo"/></a>
         </div>
-        <div id='projectHeader'>
+    	<nav>
+        	<ul>
+        	  <li><a href="index.html" class="selected">Home</a></li>
+        	  <li><a href="screen_shots.html">Screen Shots</a></li>
+        	  <li><a href="documents.html">Documents</a></li>
+        	  <li><a href="http://github.com/hquery">Code</a></li>
+<!--    	      <li><a href="download.html">Download</a></li>-->
+        	  <li><a href="glossary.html">Glossary</a></li>
+        	  <li><a href="faq.html">FAQ</a></li>
+        	  <li><a href="mailto:hquery-talk@googlegroups.com">Contact</a></li>
+        	</ul> 
+   		 </nav>
+	</header>
+	<div>
+	<div id="LeftDiv">
+		<div id="top_border">
+		<img src="images/top_border.png" alt="" class="borders"/>
+	</div>
+			<article class="feature">
           <h1>An Open-Source Distributed Query Framework for Health Data</h1>
             <ul> 
             <li>Empowers healthcare providers and researchers to perform queries across various EHR platforms while maintaining patient information behind provider firewalls</li>
             <li>Supports population health reporting</li>
             </ul>
+                <figure>
+          			<p class="imageDescription">
+            		<b><a href="images/builder.png">Graphical Query Builder</a></b>
+          			</p>
+          		<a href="images/builder.png">
+            <img src="images/builder_vsmall.png" alt="hQuery Screenshot" class="screenshot"/>
+          </a>
+          <p class="imageDescription">
+            hQuery offers a graphical drag-and-drop query builder to simplify query authoring.
+          </p>
+    	</figure>
+    </article>
+		<div id="bottom_border">
+		<img src="images/bottom_border.png" alt="" class=borders"/>
+    </div>
+    	        <div id="feedbackLink">
+    		<a href="http://groups.google.com/group/hquery-announce/subscribe" target="_external"><img src="images/button_announcements.png" alt="Join Announcement List"/></a>
+    	<section id="bottom">For more information, contact us at: <a href="mailto:hquery-talk@googlegroups.com">hquery-talk@googlegroups.com</a></section>
+        
         </div>
-        <div class="projectDescription"><h2><img src="images/blue_dot.png"/> What is hQuery?</h2></div>
+    </div>
+
+	<div id="RightDiv">    
+    <article><h2><img src="images/blue_dot.png" /> What is hQuery?</h2>
         <p>hQuery is an open-source implementation of a framework for distributed query of health data. It uses a simplified standard information model, based on nationally recognized data elements, to enable generic queries against and summarized responses from various clinical data sources. hQuery provides distributed query capabilities that maintain patient information behind the provider (such as individual provider, hospital or HIE) firewall while supporting population reporting. hQuery integrates with certified EHR systems by leveraging their ability to generate HITSP C32 or ASTM CCR patient summaries.</p>
-        <div class="milestonesList">
+     </article>
+     <article>
+          <h2><img src="images/blue_dot.png"/> Who are the intended users?</h2>
+          <p>hQuery supports providers, researchers and public reporting agencies who need to perform custom queries over large patient populations but who lack the ability to import large patient data sets into their own IT infrastructure. EHR vendors and healthcare providers are free to download, use, and integrate the hQuery software in their systems.</p>
+    </article>
+    <article>
+          <h2><img src="images/blue_dot.png"/> What is the project's objective?</h2>
+          <p>hQuery is designed to support large-scale summary reporting of health data that is distributed over a set of disparate sources. hQuery builds on scalable internet technologies and algorithms to allow use with arbitrarily large data sets using widely available standards-based code libraries.</p>
+    </article>
+    <article class="milestonesList">
           <h2>Project Milestones</h2>
           <table>
             <tbody>
@@ -69,46 +104,17 @@
               </tr>
             </tbody>
           </table>
-        </div>
-        <div class="projectDescription">
-          <h2><img src="images/blue_dot.png"/> Who are the intended users?</h2>
-          <p>hQuery supports providers, researchers and public reporting agencies who need to perform custom queries over large patient populations but who lack the ability to import large patient data sets into their own IT infrastructure. EHR vendors and healthcare providers are free to download, use, and integrate the hQuery software in their systems.</p>
-        </div>
-        <div class="projectDescription">
-          <h2><img src="images/blue_dot.png"/> What is the project's objective?</h2>
-          <p>hQuery is designed to support large-scale summary reporting of health data that is distributed over a set of disparate sources. hQuery builds on scalable internet technologies and algorithms to allow use with arbitrarily large data sets using widely available standards-based code libraries.</p>
-        </div>
-        <div id="feedback">
-          <div id="feedbackLink">For more information, contact us at: <a href="mailto:hquery-talk@googlegroups.com">hquery-talk@googlegroups.com</a></div>
-        </div>
-      </div>
-      <div id="sidebar">
-        <div id='links'>
-          <a href="http://groups.google.com/group/hquery-announce/subscribe" target="_external"><img src="images/button_announcements.png" alt="Join Announcement List"/></a>
-        </div>
-        <div id="screenshot">
-          <p class="imageDescription">
-            <b><a href="images/builder.png">Graphical Query Builder</a></b>
-          </p>
-          <a href="images/builder.png">
-            <img src="images/builder_vsmall.png" alt="hQuery Screenshot" class="screenshot"/>
-          </a>
-          <p class="imageDescription">
-            hQuery offers a graphical drag-and-drop query builder to simplify query authoring.
-          </p>
-        </div>
-      </div>
-      <div id="footer">
-        <div id="footerSourceForge">
-          <a href="http://github.com/" target="_external"><img src="images/github_icon.png" alt="GitHub Logo"></a>
-        </div>
+    </article>
+    </div>
+    </div>
+	<footer>
+        <div id="footerSourceForge"><a href="http://github.com/" target="_external"><img src="images/github_icon.png" alt="GitHub Logo"/></a></div>
         <div id="footerLinks">
           This project was funded by a contract from the <a href="http://www.hhs.gov/healthit/" target="_external">Office of the National Coordinator for Health Information Technology (ONC)</a> &nbsp
           <a href="http://www.hhs.gov/Privacy.html" target="_external">Privacy Policy</a> &nbsp 
           <a href="http://www.hhs.gov/Disclaimer.html" target="_external">Disclaimer</a> &nbsp
-          <br/>Page Last Revised: August 9, 2011
+          <br/>Page Last Revised: September 13, 2011
         </div>
-      </div>
-    </div>
+    </footer>
   </body>
 </html>
