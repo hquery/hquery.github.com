@@ -1,4 +1,4 @@
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav section {
   margin: 0;
   padding: 0;
   border: 0;
@@ -23,7 +23,6 @@ caption, th, td {
   font-weight: normal;
 }
 
-
 html,body{
   font-family:myriad, sans-serif;
   font-size: 14px;
@@ -34,7 +33,6 @@ html,body{
   width: 1000px;
 }
 
-
 header {
     border-bottom: #e6e6e6 solid 2px;
 	margin-bottom:  60px;
@@ -42,7 +40,7 @@ header {
 	text-align: right;
 }
 
-nav {
+#nav {
 	text-align: right;
 	font-size: 120%;
 
@@ -50,11 +48,14 @@ nav {
 	
 header li {
     display:inline-block;
-
+	zoom: 1;
+    *display: inline;
+	
 }
+
 .FAQ h2, div#RightDiv h2 {
 	background: url(../images/blue_dot.png) 0 30% no-repeat;
-	padding: 0 25px;
+	padding: 0 30px;
 	text-decoration: none;
 }
 
@@ -73,12 +74,12 @@ ul.FAQ p {
 	font-size: 100%;
 }
 
-
 h1 {
 	color: black;
 	font-size: 180%;
 	margin-bottom: 20px;
 }
+
 h2 {
 	font-size: 150%;
 	color: black;
@@ -114,7 +115,6 @@ article {
 	padding-bottom: 20px;
 }
 
-
 article.feature {
 	padding: 0 40px 20px 40px;
 	text-decoration: none;        
@@ -125,11 +125,9 @@ article li {
 	margin: 0 0;
 }
 
-
 figure {
 	padding: 20px 0 0 0;
 }
-
 
 dl.table-display { 
 	float: left;
@@ -157,26 +155,21 @@ dl.table-display {
 	border-top: 1px solid #e6e6e6;
 }
 
-a,
 header a:hover {
     color:#56a0ab;
 }
 
-
 /*navigation for the blind, blend this into the background*/
-#header #skipNavigation,
+
 #header #skipNavigation:hover{
     color: #FFFFFF;
 }
 
-header li.dead_link,
 header li.dead_link:hover{
 color: #AAAAAA;
 }
 
 /**content**/
-
-
 
 #builder {
 	margin: 0px 20px 0 0;
@@ -185,7 +178,6 @@ color: #AAAAAA;
 #dashboard {
 	margin: 0 20px 0 0;
 	}
-	
 	
 #LeftDiv {
 	float: left;
@@ -219,8 +211,6 @@ color: #AAAAAA;
     margin: 0 0 0 0;
 }
 
-
-
 img.announce{
   padding-top: 5px;
   margin-left: 70px;
@@ -253,8 +243,6 @@ article.FAQ p {
   font-size: 150%;
 }
 
-
-
 #feedback{
 	margin-top: 50px;
     display:block;
@@ -268,16 +256,15 @@ article.FAQ p {
     font-weight: regular;
 	/*color:#000000;*/
 }
+
 #feedback a:hover{
     text-decoration: underline;
 }
-
 
 .imageHeader{
     text-align: center;
     font-size: 20px;
 }
-
 
 .coming_soon{
   color:gray;
@@ -288,8 +275,6 @@ ul.FAQ {
 	margin-top: 10px;
 	text-decoration: none;
 }
-
-
 
 /** Announcement Subscription**/
 table.announcementSubscription{
@@ -324,12 +309,9 @@ fieldset{
   width:      0px;
 }
 
-
-
 #sidebar tr:hover {
     background:#f9f9f9;
 }
-
 
 .milestoneDate {
     width: 80px;
@@ -340,7 +322,6 @@ fieldset{
 	    padding: 0 0 0 20px;
 }
 
-
 .milestonesList td{
     border-bottom: 1px  solid #666;
 }
@@ -348,9 +329,7 @@ th{
     text-align:left;
 }
 
-
 /* * Content * */
-
 
 .projectDescription {
 	padding: 20px 0;
@@ -359,7 +338,6 @@ th{
 div.projectDescription {
   padding-bottom: 20px;
 }
-
 
 #logoDiv{
     float: left;
