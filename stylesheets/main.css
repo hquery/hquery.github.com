@@ -10,7 +10,9 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 }
 
 article, aside, dialog, figure, footer, header, hgroup, nav, section { display: block; }
+
 body { line-height: 1.5; }
+
 table {
   border-collapse: separate;
   border-spacing: 0;
@@ -21,13 +23,6 @@ caption, th, td {
   font-weight: normal;
 }
 
-table, td, th { vertical-align: middle; }
-blockquote:before { content: ""; }
-blockquote:after { content: ""; }
-q:before { content: ""; }
-q:after { content: ""; }
-blockquote, q { quotes: "" ""; }
-a img { border: none; }
 
 html,body{
   font-family:myriad, sans-serif;
@@ -41,17 +36,43 @@ html,body{
 
 
 header {
-    border-bottom: solid;
-	border-color: #e6e6e6;
-	border-width: 2px;	
+    border-bottom: #e6e6e6 solid 2px;
 	margin-bottom:  60px;
-	margin-top: 10px;
+	margin-top: 20px;
+	text-align: right;
 }
 
 nav {
 	text-align: right;
-	  font-size: 120%;
+	font-size: 120%;
+
 }
+	
+header li {
+    display:inline-block;
+
+}
+.FAQ h2, div#RightDiv h2 {
+	background: url(../images/blue_dot.png) 0 30% no-repeat;
+	padding: 0 25px;
+	text-decoration: none;
+}
+
+.imageDescription {
+	background: none;
+}
+
+.FAQ li {
+	list-style-type: none;
+	margin-bottom: 20px;
+}
+
+ul.FAQ p {
+	list-style-type: none;
+	border: 1px solid red;
+	font-size: 100%;
+}
+
 
 h1 {
 	color: black;
@@ -84,15 +105,8 @@ header a.selected {
 }
 
 header ul {
-    text-align:right;
-    margin: -20px 0 2px 0;
-    width: 100%
-            width: 20%;
-}
-
-header li {
-    display:inline;
-
+	list-style-type: none;
+	padding-top: 50px;
 }
 
 article {
@@ -187,14 +201,22 @@ color: #AAAAAA;
 	height: 80%;
 }
 
+#rightscreen {
+	float: left;
+	width: 480px;
+	margin: 0 0 0 35px;
+	border: 1px;
+	border-color: black;
+	height: 80%;
+}
+
 #feedback {
 	margin: 20px 0 0 0;
 }
 
 #logo {
-    align: left;
+    float: left;
     margin: 0 0 0 0;
-    width: 20%;
 }
 
 
@@ -218,12 +240,13 @@ img{
     height:31px;
 }
 
-
-
-article ul{
+article.feature ul{
   font-size: 120%;
   font-weight: regular;
   text-decoration: none
+}
+article.FAQ p {
+	padding: 5px 0;
 }
 
 .bumper{
@@ -260,10 +283,12 @@ article ul{
   color:gray;
 }
 
-span {
+ul.FAQ {
 	border: 1px solid white;
 	margin-top: 10px;
+	text-decoration: none;
 }
+
 
 
 /** Announcement Subscription**/
@@ -288,6 +313,7 @@ table.announcementSubscription input#emailDigest{
 .submitEmailSubscription{
     margin-left:220px;
 }
+
 fieldset{
   border: none;
 }
